@@ -65,13 +65,6 @@ export class UserService {
                 { headers }
             )
             .map((response: AuthResponse) => {
-                if (response.success) {
-                    localStorage.setItem('access_token', response.token);
-                    this.loggedIn = true;
-                } else {
-                    localStorage.removeItem('access_token');
-                    this.loggedIn = false;
-                }
                 return response;
             })
             .catch(this.handleError);

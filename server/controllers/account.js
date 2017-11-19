@@ -23,7 +23,9 @@ export default () => {
                 'local', {
                     session: false
                 })(req, res, () => {
-                res.status(200).send('Successfully created new account');
+                res.status(200).json({
+                    success: true
+                });
             });
         });
     });

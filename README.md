@@ -27,6 +27,7 @@ This repository contains all the packages, modules and also a sample code base w
 git clone --depth 1 https://github.com/awsafanam/mean-starter.git  
 cd mean-starter
 npm install  
+ng build // only for the first time
 npm start  
 ```
 If all the packages and modules installed successfully, your default web browser will open and you can see the default MEAN application at `http://localhost:3000`. This is the default port unless you change that manually.

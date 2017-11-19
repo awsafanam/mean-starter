@@ -45,6 +45,7 @@ passport.use(new LocalStrategy({
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+
 // API location
 app.use('/v1', routes);
 

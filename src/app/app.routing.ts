@@ -38,7 +38,7 @@ export const routes: Routes = [
     {
         path: 'dashboard',
         component: DashboardComponent,
-        // canActivate: [AuthGuard],
+        canActivate: [AuthGuard],
     },
     // otherwise redirect to home
     { path: '**', component: P404Component }
