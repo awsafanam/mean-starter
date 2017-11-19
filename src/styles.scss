@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body, html {
+    min-height: 100%;
+}
+.wrapper {
+    min-height: calc(100vh - 84px);
+    padding-bottom: 30px;
+}
+
+.spinner {
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    margin: 0;
+    font-size: 10px;
+    float: left;
+    margin-left: 5px;
+    display: inline-block;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(100,193,227, 0.2);
+    border-right: 1.1em solid rgba(100,193,227, 0.2);
+    border-bottom: 1.1em solid rgba(100,193,227, 0.2);
+    border-left: 1.1em solid #64c1e3;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-tra0nsform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    padding: 30px 0;
+    background: #f8f9fa;
+    p {
+        margin: 0;
+    }
+}
